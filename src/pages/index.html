@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page</title>
+		<link rel="icon" href="../img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/88de05e7d0.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../../dist/css/main.css" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="nav__left">
+				<h1 class="nav__left-title">MyNotes <i class="fa-solid fa-note-sticky"></i></h1>
+			</div>
+			<div class="nav__right">
+				<button class="nav__right-add"><i class="fa-solid fa-plus"></i> Dodaj</button>
+				<button class="nav__right-delete"><i class="fa-regular fa-trash-can"></i> Usuń wszystkie</button>
+			</div>
+		</nav>
+
+		<main class="main">
+			<div class="main__note">
+				<div class="main__note-top">
+					<h2 class="main__note-top-title">Ramen</h2>
+					<button class="main__note-top-btn"><i class="fa-solid fa-x"></i></button>
+				</div>
+				<p class="main__note-text">Pójść na ramen z całą klasą</p>
+			</div>
+			<div class="main__note">
+				<div class="main__note-top">
+					<h2 class="main__note-top-title">Ramen</h2>
+					<button class="main__note-top-btn"><i class="fa-solid fa-x"></i></button>
+				</div>
+				<p class="main__note-text">Pójść na ramen z całą klasą</p>
+			</div>
+			<div class="main__note">
+				<div class="main__note-top">
+					<h2 class="main__note-top-title">Ramen</h2>
+					<button class="main__note-top-btn"><i class="fa-solid fa-x"></i></button>
+				</div>
+				<p class="main__note-text">Pójść na ramen z całą klasą</p>
+			</div>
+		</main>
+
+		<aside class="popup">
+			<h2 class="popup__title">dodaj notatkę</h2>
+			<label class="popup__label">Wybierz kategorię</label>
+			<select id="select" class="popup__select">
+				<option value="0" selected disabled>- wybierz kategorie -</option>
+				<option value="1">Zakupy</option>
+				<option value="2">Ramen</option>
+				<option value="3">Kino</option>
+			</select>
+			<label class="popup__label">Wpisz treść notatki</label>
+			<textarea id="message" class="popup__message"></textarea>
+			<p class="popup__error">Uzupełnij wszystkie pola!</p>
+			<div class="popup__btns">
+				<button class="popup__btns-left"><i class="fa-solid fa-floppy-disk"></i> Zapisz</button>
+				<button class="popup__btns-right"><i class="fa-solid fa-x"></i> Anuluj</button>
+			</div>
+		</aside>
+
+		<script defer src="../js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+@use "./utilities/index" as *;
+
+body {
+	font-family: "Red Hat Text", sans-serif;
+	background-color: #333;
+	color: #ddd;
+}
+
+.nav {
+	padding: 1em;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	&__right {
+		display: flex;
+		column-gap: 1em;
+
+		&-add,
+		&-delete {
+			@include btn;
+
+			i {
+				margin-right: 0.3em;
+			}
+		}
+	}
+}
+
+.main {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+
+	&__note {
+		margin: 2.5em;
+		background-color: royalblue;
+		background-color: slateblue;
+		background-color: mediumseagreen;
+		width: fit-content;
+		border: 2px solid black;
+
+		&-top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: rgb(41, 67, 145);
+			background-color: hsl(248, 38%, 45%);
+			background-color: rgb(44, 133, 84);
+			padding: 0.5em;
+
+			i {
+				padding: .3em;
+				margin-right: 0.7em;
+				font-size: 1.7rem;
+				transition: color .2s;
+
+				&:hover {
+					color: white;
+				}
+
+			}
+		}
+
+		&-text {
+			padding: 1em;
+			min-height: 130px;
+			max-height: 200px;
+			max-width: 233px;
+			overflow-y: scroll;
+		}
+	}
+}
+
+.popup {
+	display: grid;
+	row-gap: 1em;
+	padding: 2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #1f1f1f;
+	text-align: center;
+	border-radius: 1em;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(219, 219, 227, 1);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(219, 219, 227, 1);
+	box-shadow: 0px 0px 12px 0px rgba(219, 219, 227, 1);
+	opacity: 0;
+	transition: opacity .2s;
+	z-index: -10;
+
+	&__title {
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__select,
+	&__message {
+		display: block;
+	}
+
+	&__select {
+		padding: 0.7em 1.2em;
+	}
+
+	&__message {
+		min-height: 100px;
+	}
+
+	&__error {
+		color: tomato;
+		visibility: hidden;
+	}
+
+	&__btns {
+		margin-top: 1em;
+		&-left,
+		&-right {
+			@include btn;
+		}
+
+		&-left {
+			margin-right: 1em;
+		}
+	}
+}

@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: #333;
+  color: #ddd;
+}
+
+.nav {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__right {
+  display: flex;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+.nav__right-add, .nav__right-delete {
+  color: #ddd;
+  padding: 0.8em 1.2em;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  transition: color 0.2s, background-color 0.2s;
+}
+.nav__right-add:hover, .nav__right-delete:hover {
+  color: black;
+  background-color: white;
+}
+.nav__right-add i, .nav__right-delete i {
+  margin-right: 0.3em;
+}
+
+.main {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.main__note {
+  margin: 2.5em;
+  background-color: royalblue;
+  background-color: slateblue;
+  background-color: mediumseagreen;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid black;
+}
+.main__note-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(41, 67, 145);
+  background-color: hsl(248, 38%, 45%);
+  background-color: rgb(44, 133, 84);
+  padding: 0.5em;
+}
+.main__note-top i {
+  padding: 0.3em;
+  margin-right: 0.7em;
+  font-size: 1.7rem;
+  transition: color 0.2s;
+}
+.main__note-top i:hover {
+  color: white;
+}
+.main__note-text {
+  padding: 1em;
+  min-height: 130px;
+  max-height: 200px;
+  max-width: 233px;
+  overflow-y: scroll;
+}
+
+.popup {
+  display: grid;
+  row-gap: 1em;
+  padding: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f1f1f;
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: 0px 0px 12px 0px rgb(219, 219, 227);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: -10;
+}
+.popup__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.popup__select, .popup__message {
+  display: block;
+}
+.popup__select {
+  padding: 0.7em 1.2em;
+}
+.popup__message {
+  min-height: 100px;
+}
+.popup__error {
+  color: tomato;
+  visibility: hidden;
+}
+.popup__btns {
+  margin-top: 1em;
+}
+.popup__btns-left, .popup__btns-right {
+  color: #ddd;
+  padding: 0.8em 1.2em;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  transition: color 0.2s, background-color 0.2s;
+}
+.popup__btns-left:hover, .popup__btns-right:hover {
+  color: black;
+  background-color: white;
+}
+.popup__btns-left {
+  margin-right: 1em;
+}/*# sourceMappingURL=main.css.map */
