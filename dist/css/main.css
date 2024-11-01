@@ -115,7 +115,9 @@ body {
   padding: 1em;
   min-height: 130px;
   max-height: 200px;
+  min-width: 233px;
   max-width: 233px;
+  word-break: break-all;
   overflow-y: scroll;
 }
 
@@ -168,4 +170,25 @@ body {
 }
 .popup__btns-left {
   margin-right: 1em;
+}
+
+.purple {
+  background-color: slateblue;
+}
+.purple .main__note-top {
+  background-color: hsl(248, 38%, 45%);
+}
+
+.blue {
+  background-color: royalblue;
+}
+.blue .main__note-top {
+  background-color: rgb(41, 67, 145);
+}
+
+.green {
+  background-color: mediumseagreen;
+}
+.green .main__note-top {
+  background-color: rgb(44, 133, 84);
 }/*# sourceMappingURL=main.css.map */
